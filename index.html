@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-        <div>
-        <h1>Task Manager</h1>
-        <input type="text" id="taskInput" placeholder="Add a new task">
-        <button id="addTaskBtn">Add Task</button>
-        <ul id="taskList"></ul>
+
+<body class="bg-gray-600">
+    <div class="flex">
+        <div class="w-1/6 h-screen bg-slate-700"></div>
+        <div class="p-10 w-full ">
+            <h1 class="text-center text-2xl font-bold text-white">Task Manager</h1>
+            <div class="flex justify-between mt-5 mb-5 ">
+                <input class="w-3/4" type="text" id="taskInput" placeholder="Add a new task">
+                <button class=" w-1/4 border-4 bg-yellow-400" id="addTaskBtn">Add Task</button>
+            </div>
+            <div class=" mt-10 text-xl text-white font-serif font-bold">
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+        <div class="w-1/6 h-screen bg-slate-700"></div>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
